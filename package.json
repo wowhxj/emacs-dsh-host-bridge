@@ -1,0 +1,17 @@
+{
+  "name": "emacs-dsh-host-bridge",
+  "version": "0.2.0",
+  "description": "Private local discovery for the emacs-dsh client and the existing DSH Web Host",
+  "keywords": ["dsh", "dsh-plugin", "emacs", "emacs-dsh"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wowhxj/emacs-dsh-host-bridge.git"
+  },
+  "homepage": "https://github.com/wowhxj/emacs-dsh-host-bridge#readme",
+  "bugs": "https://github.com/wowhxj/emacs-dsh-host-bridge/issues",
+  "type": "module",
+  "main": "index.js",
+  "files": ["index.js", "cordis.patch.yml"],
+  "scripts": { "test": "node --test tests.mjs" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
